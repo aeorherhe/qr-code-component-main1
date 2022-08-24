@@ -1,0 +1,46 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: outfit, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background: hsl(212, 45%, 89%);
+  padding: 20%;
+  margin: 5%;
+}
+
+.qrcode {
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  display: grid;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.qrcode img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.qrcode p {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  margin: 0;
+  color: hsl(220, 15%, 55%);
+}
+
+.qrcode h2 {
+  font-size: 2rem;
+  padding: 1rem 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .qrcode {
+    max-width: 18rem;
+    min-height: 30vh;
+    margin: 30%;
+  }
+}
