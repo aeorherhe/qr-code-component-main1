@@ -3,44 +3,59 @@ html {
 }
 
 body {
-  font-family: outfit, Arial, Helvetica, sans-serif;
+  font-family: outfit, sans-serif;
+  background: lavender;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+  /* justify-items: center; */
 }
 
 .container {
-  background: hsl(212, 45%, 89%);
-  padding: 20%;
-  margin: 5%;
+  width: 310px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  background: white;
+  border-radius: 20px;
+  /* padding-top: 15px; */
+  padding-bottom: 15px;
 }
 
-.qrcode {
-  background: rgb(255, 255, 255);
-  padding: 1rem;
-  display: grid;
-  text-align: center;
-  border-radius: 30px;
-}
-
-.qrcode img {
+img {
+  width: 290px;
+  height: 290px;
   border-radius: 10px;
-  width: 100%;
+  object-fit: cover;
 }
 
-.qrcode p {
-  font-size: 1.5rem;
-  padding: 0 1rem;
-  margin: 0;
+.card-content {
+  /* background: greenyellow; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 10px;
+  /* align-items: stretch; */
+}
+
+p {
+  font-size: 15px;
+  /* text-align: center; */
   color: hsl(220, 15%, 55%);
+  margin: 5px;
 }
 
-.qrcode h2 {
-  font-size: 2rem;
-  padding: 1rem 1rem 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .qrcode {
-    max-width: 18rem;
-    min-height: 30vh;
-    margin: 30%;
-  }
+h1 {
+  font-size: 2.2rem;
+  white-space: nowrap;
+  /* text-align: center; */
 }
